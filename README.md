@@ -11,6 +11,11 @@ Welcome to the repository for the OpenAPI specification of [Papaki's](https://gi
 
 You can view the swagger documentation [here](https://msensis-com.github.io/papaki-gold-reseller-docs/).
 
+The reseller API does not follow REST principles, it is more like an RPC API.
+Sadly OpenAPI does not accommodate RPC-like APIs, so a modified version of Swagger-UI is used to allow a [hack](https://github.com/OAI/OpenAPI-Specification/issues/1635#issuecomment-523452474) for defining multiple requests to the same path.
+
+See the relevant [swagger-ui issue](https://github.com/swagger-api/swagger-editor/issues/854) for more info.
+
 > [!CAUTION]
 > Please note that we are not accepting pull requests from third parties at this time.
 > 
