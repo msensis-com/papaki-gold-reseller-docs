@@ -5,10 +5,10 @@ info:
   version: 4.3.0
   description: API for domain registration and management provided by Papaki for resellers.
 servers:
-  - url: https://api.papaki.com
+  - url: https://api.papaki.com/register_url2.aspx
     description: Production server
 paths:
-  /register_url2.aspx:
+  /#register-a-domain:
     post:
       summary: Register a domain
       description: Register a new domain using the domainregister command.
@@ -30,7 +30,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-  /getnameservers:
+  /#get-nameservers:
     post:
       summary: Get nameservers for a domain
       description: Retrieve the nameservers for a specified domain.
@@ -46,7 +46,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/NameserverResponse'
-  /editnameservers:
+  /#edit-nameservers:
     post:
       summary: Edit nameservers for a domain
       description: Modify the nameservers associated with a specified domain.
@@ -62,7 +62,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/EditNameserverResponse'
-  /domainupdate:
+  /#domain-update:
     post:
       summary: Renew a domain
       description: Renew the registration of an existing domain.
@@ -78,7 +78,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DomainRenewResponse'
-  /changeregistrar:
+  /#change-registrar:
     post:
       summary: Transfer a domain
       description: Transfer a domain from one registrar to another.
