@@ -94,7 +94,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DomainTransferResponse'
-  /getcontactdetails:
+  /#get-contact-details:
     post:
       summary: Get contact details for a domain
       description: Retrieve the contact details for a specified domain.
@@ -110,7 +110,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/GetContactDetailsResponse'
-  /savecontactdetails:
+  /#save-contact-details:
     post:
       summary: Set contact details for a domain
       description: Update the contact details for a specified domain.
@@ -126,7 +126,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SetContactDetailsResponse'
-  /domainSearch:
+  /#domain-search:
     post:
       summary: Search domain availability
       description: Checks if a domain is available for registration across different TLDs.
@@ -142,7 +142,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DomainSearchResponse'
-  /whois:
+  /#whois:
     post:
       summary: Whois lookup for a domain
       description: Retrieves Whois information for a specified domain.
@@ -158,7 +158,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/WhoisResponse'
-  /getDomainlock:
+  /#get-domain-lock:
     post:
       summary: Get domain lock status
       description: Retrieves the lock status of a domain (not available for .gr, .ελ, and .eu domains).
@@ -174,7 +174,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/GetDomainLockResponse'
-  /setDomainlock:
+  /#set-domain-lock:
     post:
       summary: Set domain lock status
       description: Enables or disables the lock on a domain (not available for .gr, .ελ, and .eu domains).
@@ -190,7 +190,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SetDomainLockResponse'
-  /sendAuthCode:
+  /#send-auth-code:
     post:
       summary: Send authorization code
       description: Sends an authorization code to the domain owner's email (not supported for .eu domains).
@@ -206,7 +206,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SendAuthCodeResponse'
-  /managednssec:
+  /#manage-dns-sec:
     post:
       summary: Manage DNSSEC for a domain
       description: Enables or disables DNSSEC for a domain.
@@ -222,7 +222,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ManageDnssecResponse'
-  /dnssecinfo:
+  /#dns-sec-info:
     post:
       summary: Get DNSSEC info for a domain
       description: Retrieves DNSSEC information for a domain.
@@ -238,7 +238,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/GetDnssecInfoResponse'
-  /deletedomain:
+  /#delete-domain:
     post:
       summary: Delete a domain
       description: Deletes a domain from the registry.
@@ -254,7 +254,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/DeleteDomainResponse'
-  /changeowner:
+  /#change-owner:
     post:
       summary: Change owner of a domain
       description: Changes the ownership details of a domain (not supported for .eu domains).
@@ -270,7 +270,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ChangeOwnerResponse'
-  /multimodifynameserver:
+  /#multi-modify-nameserver:
     post:
       summary: Batch modify nameservers
       description: Allows batch modification of multiple nameservers for different domains.
@@ -286,7 +286,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/MultiModifyNameserverResponse'
-  /checkphonevalid:
+  /#check-phone-valid:
     post:
       summary: Check phone number validity
       description: Verifies if the provided phone number is valid.
@@ -302,7 +302,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CheckPhoneValidResponse'
-  /checknameserver:
+  /#check-name-server:
     post:
       summary: Check nameserver validity
       description: Checks if a given nameserver is valid.
@@ -318,7 +318,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CheckNameserverResponse'
-  /getdomaininfo:
+  /#get-domain-info:
     post:
       summary: Get domain info
       description: Retrieves detailed information about a specific domain.
